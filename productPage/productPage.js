@@ -81,7 +81,7 @@ function displayData(DataArray) {
   DataArray.forEach(function (DataArray) {
     let div = document.createElement("div");
     let card = document.createElement("div");
-
+  
     let img1 = document.createElement("img");
     img1.src = DataArray.display_img;
     img1.style.width = "300px"
@@ -89,6 +89,13 @@ function displayData(DataArray) {
     let quickView = document.createElement("div");
     quickView.setAttribute("id", "quickView");
     quickView.textContent = "QUICKVIEW";
+    quickView.addEventListener("click",()=>{
+      console.log("****CARD********")
+      console.log(DataArray)
+      localStorage.setItem("ajio_current_item",JSON.stringify(DataArray))
+      window.location.href = '../description/procuctdetails.html'
+    })
+
 
     let img = document.createElement("div");
     img.append(img1, quickView);
@@ -160,7 +167,7 @@ function displayData(DataArray) {
       quickView.style.display = "none";
     }
     quickView.onclick = () => {
-      console.log(DataArray);
+      // console.log(DataArray);
       // getData(DataArray._id);
     };
   });

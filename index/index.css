@@ -36,9 +36,7 @@ transform: scale(1.015);
         display:grid;
         grid-template-columns:33% 33% 33%;
     }
-    #ad_div>a>img{
-        /* width:338px; */
-    }
+
     #ad_div1>a>img{
         width:449px;
     }

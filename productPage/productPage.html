@@ -17,6 +17,15 @@
   <link rel="stylesheet" href="../NavbarFiles/styles/navbar_real.css">
   <link rel="icon" href="https://assets.ajio.com/static/img/favicon.ico" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <script src="../newest/index.js" defer></script>
+  <style>
+    .flexCenter{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
@@ -88,7 +97,7 @@
                 checkroom
               </span>
             </div>
-            <div id="cart_icon">
+            <div onclick="toTheCart()" id="cart_icon">
               <span class="material-icons-outlined">
                 shopping_bag
               </span>
@@ -453,11 +462,11 @@
   </div>
   </div>
   <div id="pagination">
-    <div onclick="decrementPage()">Previous</div>
-    <div>
-      <p id="pageValue">1</p>
+    <div class="flexCenter" onclick="decrementPage()">Previous</div>
+    <div class="flexCenter">
+      <p class="flexCenter" id="pageValue">1</p>
     </div>
-    <div onclick="incrementPage()">Next</div>
+    <div class="flexCenter" onclick="incrementPage()">Next</div>
   </div>
   <div id="footer_division"></div>
 

@@ -238,7 +238,7 @@ body{
 div.coupons_info{
     padding: 10px;
     height: 250px;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .coupons_info{
